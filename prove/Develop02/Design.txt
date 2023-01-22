@@ -1,0 +1,37 @@
+Classes
+    Class Journal 
+    {
+        String AddEntry - call to the entry class
+        String DisplayEntry - retrive previous entry the user has made with dates.
+        SaveEntry - save the file.
+        LoadEntry - load previous entry from the user to the screen.
+
+    }
+
+    Class Entry
+    {
+        WriteEntry - an area for the user to enter the daily entry.
+        SaveToJournal - Save the users journal entry to the file.
+    }
+
+    Class PromptGenerator
+    {
+        string prompt1 = "What was something nice about today?";
+        string prompt2 = "Did you meet anyone new today?";
+        string prompt3 = "Did you try a new food today?";
+        string prompt4 = "Did anything enteresting happen today?";
+        string prompt5 = "What did you eat for dinner today?";
+
+        int randPrompts - randomly slect one of the 5 prompts.
+    }
+
+    Class Program
+    {
+        call the journal class
+        display journal entry
+        display message to user asking them what they would like to do.
+            1. Write entry - prompt with a random prompt
+            2. Load Saved Entries - Load the journal file to the screen.
+            3. Save - Save entry.
+            
+    }
