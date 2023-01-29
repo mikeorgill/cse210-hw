@@ -1,37 +1,32 @@
 using System.IO;
 public class Journal
 {
-    //create file
-    string myJournal = "JournalEntry.txt";
+    string filePath = @"cse210-hw\prove\Develop02\journalLog.txt";
+    public string _addEntry;
+    
+    public string _loadFile;
 
-    string[] lines = System.IO.File.ReadAllLines(myJournal);
-
-
-    public void AddEntry()
-    {
-       
+    public string _saveFile(){
+          closeFile = new System.IO.File.(filePath);
         
-        Console.WriteLine(PromptGenerator);
-        string newEntry = Console.ReadLine();
+    }
+    //create file or open file
+    public void _openJournal(){
+        
+        string[] journalLog;
+        
+
+            if (File.Exists(filePath)){
+                string[] lines = System.IO.File.ReadAllLines(filePath);
+                journalLog = lines;
+            }
+
+            else{
+                FileStream log = File.Create(filePath);
+                string[] lines = System.IO.File.ReadAllLines(filePath);
+                journalLog = lines;        
+        
+            }
     }
     
-
-    public void DisplayEntry()
-    {
-        foreach (string line in lines)
-        {
-            string[] entry = line.Split(",");
-        }
-    }
-    public void SaveEntry()
-    {
-        using (StreamWriter outputFile = new StreamWriter(myJournal))
-        {
-            outputFile.WriteLine();
-        }
-    }
-    public void Load(){
-
-        
-    }
 }
