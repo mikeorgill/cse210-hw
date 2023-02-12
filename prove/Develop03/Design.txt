@@ -1,0 +1,30 @@
+Classes:
+
+    class Words
+    {
+        List word - place each word in the list so that it can removed when needed.
+        random RandomWord - randomly remove a few words from the word list and replace it with "_ _ _" 
+            when the enter button is pressed.
+        
+    }
+
+    class Scriptures
+    {
+        String scipture - will hold the scipture that is being passed into the word class.
+        string verse - each verse will be placed in its own varible.
+    }
+
+    class Reference
+    {
+        list reference - will hold all the scriptures by: chapters and verse in a list so that they can be called
+
+    }
+
+    class Program
+    {
+        prompt user for a scipture from the selection.
+        have a list of options.
+        call the reference class.
+        call the words class.
+        
+    }
