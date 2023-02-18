@@ -1,0 +1,51 @@
+class public BaseActivity{
+    public timer - timer will hold the amount of time that the activity will last.
+    
+    public startMessage - Will hold a message for the user that will display at the begininig of the program
+                        It will welcome the user.
+    public endMessage - Will display a message at the end of the activity.
+
+    Public countdownTimer - will hold a paused timeout for the activity.
+
+    public string activity - This will hold the menu for the user to select which activity they would like to do.
+    
+}
+
+class public BreathingActivity : BaseActivity {
+    call startMessage()
+
+    private string DisplayMessage - this will call a randomly selected message that will welcome the use.
+
+    private function breathInOut {
+        This method will hold two strings that will display breath-In and breath-Out. It string will be displayed for
+        a certain amount of time after breath-out is displayed there will be a short paused before it starts again. repeat until
+        timer has run out.
+    }
+
+    call endMessage()
+}
+
+class public reflictionActivity : BaseActivity{
+    call startMessage()
+
+    random randomPrompt - this will randomly select a prompt from a list of messages. 
+
+    display prompt - this will show the user the prompting on the screen.
+
+    countdownTimer - pause program to allow user to answer prompting.
+
+    call endMessage() - end activity time has run out.
+}
+
+class public Listing Activity : baseActivity{
+
+    call startMessage()
+
+    displayMessage - display a message to the user.
+
+    call random randomPrompt - call the random prompt 
+
+    call countdownTimer() - to pasue the program for user to respond to listing activity.
+
+    call endMessage()
+}
