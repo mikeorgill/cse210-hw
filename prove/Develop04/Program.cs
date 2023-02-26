@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        //Console.WriteLine("Hello Develop04 World!");
         BaseActivity baseA = new BaseActivity();
         ListingActivity listingA = new ListingActivity();
         ReflictionActivity reflect = new ReflictionActivity();
@@ -20,7 +20,7 @@ class Program
         while(a != 4)
         {
             
-            
+            Console.Clear();
             //baseA.CountdownTimer();
             //baseA.SpinningTimer();
            
@@ -49,7 +49,10 @@ class Program
                 breath.StartMessage();
                 Console.WriteLine();
                 int timer = baseA.Timer();
+                Console.Write("Get ready to start in: ");
                 baseA.CountdownTimer();
+                Console.WriteLine();
+                Console.WriteLine();
                 startTime = DateTime.Now;
                 endTime = startTime.AddSeconds(timer);
                 
@@ -57,9 +60,9 @@ class Program
                 {
                     
                     breath.BreathIn();
-                    //Console.Clear();
+                    Thread.Sleep(900);
                     breath.BreathOut();
-                    //Console.Clear();
+                    Thread.Sleep(900);
                 }
                 baseA.EndMessage();
             }
@@ -79,7 +82,7 @@ class Program
                 listingA.listMessage();
                 Console.WriteLine();
                 listingA.listingPrompt();
-
+                listingA.EndMessage();
             }
             else                      
                 a = 4;

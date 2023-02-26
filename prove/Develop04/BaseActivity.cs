@@ -18,7 +18,7 @@ class BaseActivity
 
     public void CountdownTimer()
     {
-        int i = 3;
+        int i = 5;
         while (i > 0)
         {
             Console.Write(i);
@@ -58,6 +58,7 @@ class BaseActivity
     public void EndMessage()
     {
         Console.WriteLine("Your time is up. Nice work.");
+        Thread.Sleep(5000);
 
     }
 
