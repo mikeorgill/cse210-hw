@@ -1,0 +1,77 @@
+Classes:
+    BaseGoal
+    SimpleGoal
+    EntralGoal
+    CheckGoal
+    Program
+
+
+BaseGoal{
+            Save - Save goals to file.
+            Load - Load goals from saved file.
+            ------------
+            // Shared functions:
+            Name - Name the goal.
+            Describe - Tell what the goal is.
+            Points - How many points is the goal worth.
+            ---------------
+            Record - (polymorphism) - this we be different for each class.
+
+        }
+
+
+SimpleGoal{
+            
+            Name - Name the goal.
+            Describe - Tell what the goal is.
+            Points - How many points is the goal worth.
+            -----------------
+            Record - record event completed. Add points to point total.
+                     
+          }
+
+EnternalGoal{
+            Name - Name the goal.
+            Describe - Tell what the goal is.
+            Points - How many points is the goal worth.
+            -------------------
+            Record - Give points each time the goal is meet. This goal will never be completed. Add points to point Total.
+          }
+
+
+CheckGoal{
+            Name - Name the goal.
+            Describe - Tell what the goal is.
+            Points - How many points is the goal worth.
+            ------------
+            Record - Add points to goal as each step is completed.
+                     Give bonuses points when all step of goal are completed.
+                     Add points to point Total.
+         }
+
+
+Program{
+            int totalPoints
+            List goalLitst
+
+            BaseGoal - class will be used to hold the defined functions and methods for all the heratied classes.
+            SimpleGoal - Will be goals that are easy to complete one step goals.
+            EntralGoal - These goals will be a daily goal that will never be complete but will get point each time it is done.
+            CheckGoal - Will a goals that have a goal that will be done in user choice of times. Every time the goal has been
+                            done the user will recive points and the step will mark it has been completed some many times until
+                            the user has completed the goal the set number of times. Eample user pick goal to be completed 3 times.
+                            Each time the goal is done the counter will increase until the goal reads 3 of 3.
+            
+            SimpleGoal, EntralGoal, and CheckGoal will all inharate from the BaseGoal class. The "Record" function in each class will
+            different so this will be a polymorphism funciton. 
+
+            The goals will be saved into a file using the save Method.
+            The goals can be load againg using the Load method.
+            The goal list will hold all the goals.
+            Total points will keep track of the points gained when the goals are completed. Points will be saved in the save file so
+                that they can be recalled.
+            
+            The Quit option will end the program.
+
+            
+       }

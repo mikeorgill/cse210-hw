@@ -1,0 +1,3 @@
+105
+[X],,simple goal,,test simple goal,,8,,True
+[X],,eternal goal,,test eternal gaol,,89,,True
